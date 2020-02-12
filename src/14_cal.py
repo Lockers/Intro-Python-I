@@ -30,7 +30,9 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
-print(len(sys.argv))
+
+cal = datetime.now()
+
 if len(sys.argv) == 3:
   yy = int(sys.argv[1])
   mm = int(sys.argv[2])
@@ -38,6 +40,8 @@ if len(sys.argv) == 3:
 elif len(sys.argv) == 2:
   mm = int(sys.argv[1])
   print(calendar.month(2020, mm))
+elif len(sys.argv) == 1:
+  print(calendar.month(cal.year, cal.month))
 else:
-  print('EXPECTS 2 ARGUMENTS')
+  print('EXPECTS 2 OR LESS ARGUMENTS')
 
