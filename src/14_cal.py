@@ -34,8 +34,8 @@ from datetime import datetime
 cal = datetime.now()
 
 if len(sys.argv) == 3:
-  yy = int(sys.argv[1])
-  mm = int(sys.argv[2])
+  yy = int(sys.argv[2])
+  mm = int(sys.argv[1])
   print(calendar.month(yy, mm))
 elif len(sys.argv) == 2:
   mm = int(sys.argv[1])

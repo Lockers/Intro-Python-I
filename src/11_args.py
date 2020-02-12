@@ -39,9 +39,7 @@ print(f2(*a))    # Should print 22
 
 # YOUR CODE HERE
 
-def f3(num1, num2 = 0):
-    if(num2 == 0):
-        num2 +=1
+def f3(num1, num2 = 1):
     return num1 + num2
 
 print(f3(1, 2))  # Should print 3
